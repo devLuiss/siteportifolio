@@ -40,7 +40,7 @@ setInterval(function () {
       nomeDodia = "Sexta Feira";
       break;
     case 6:
-      nomeDodia = "Sábado Feira";
+      nomeDodia = "Sábado ";
       break;
     default:
       nomeDodia = "Dia inválido";
@@ -50,20 +50,20 @@ setInterval(function () {
     "Hoje é : " + nomeDodia + " " + hora + ":" + minutos + ":" + segundos;
 }, 1000);
 
-function showhtml() {
-  let htmlconteudo = document.getElementById("conteudobox");
-  if (htmlconteudo.style.position == "relative") {
-    htmlconteudo.style.position = "absolute";
+function showjs() {
+  let htmlconteudo = document.getElementById("conteudojs");
+  if (htmlconteudo.style.marginTop == "300px") {
+    htmlconteudo.style.marginTop = "-300px";
   } else {
-    htmlconteudo.style.position = "relative";
+    htmlconteudo.style.marginTop = "300px";
   }
 }
 
-function showjs() {
-  let htmlconteudo = document.getElementById("conteudojs");
-  if (htmlconteudo.style.position == "relative") {
-    htmlconteudo.style.position = "absolute";
+function showhtml() {
+  let htmlconteudo = document.getElementById("conteudobox");
+  if (htmlconteudo.style.marginTop == "300px") {
+    htmlconteudo.style.marginTop = "-300px";
   } else {
-    htmlconteudo.style.position = "relative";
+    htmlconteudo.style.marginTop = " 300px";
   }
 }

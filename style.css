@@ -2,20 +2,9 @@ body {
     margin: 0;
     background: rgb(124,32,186);
     background: linear-gradient(90deg, rgba(124,32,186,1) 10%, rgba(223,132,132,1) 50%, rgba(230,189,131,1) 81%);
-    background-size: 400% 400%;
+    background-size: 100% 100%;
     animation: gradient 15s ease infinite;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 
@@ -27,22 +16,7 @@ aside {
     z-index:999;
     display:flex;
 }
-#dia{
-    background-color: rgba(10,23,55,0.5);
-    background-size: 400% 400%;
-    background-position: 0% 50%;
-    border-radius:94% 100% 100% 0% / 48% 0% 100% 7% ;
-    width: 100px;
-    height: 100px; 
-    margin: 10px;  
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    color: #fff;
-    font-size: 15px;
-    position: relative;
-    text-align: center;
-}
+
 
 #menu-opener {
 
@@ -104,136 +78,122 @@ aside {
     border-bottom:none;
 }
 
+.container{
+background-color: rgba(10,23,55,0.5);
+flex-direction: row;
+border-radius: 10px;
+display: flex;
+margin: 10px;
+width: 1900px;
+height: 470px;
+overflow: hidden;
+}
+
 .box {
-    color: aliceblue;
-    position: relative;
+    color: white;
     width: 400px;
     height: 400px;
-    background-color: rgba(10,23,55,0.5);
-    background-size: 400% 400%;
+    background-color: rgb(10, 23, 55);;   
     border-radius: 10px;
-    padding: 10px;
-    margin: 15px;
-    box-sizing: border-box;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
+    margin: 30px;
+    padding: 5px;
     overflow: hidden;
-    display: flex;
-    position: relative;
-    float: left;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
 }
 .box:hover {
     transform:  scale(1.1);
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transition: all 0.9s ease;
+
 }
-.titulo {
-   position: fixed;
-   color: white;
-    font-size: 30px;
-    background-color: rgba(10,23,55,0.5);
-    margin: 10px;
-    align-items: center;
-    text-align: center;
-    margin-left: 700px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 10px;
-    height: 50px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    overflow: hidden;
+#titulo {
+    position: relative;
+    color: white;
     display: flex;
-    
-}
-#conteudo{
-   position: fixed;
-    font-size: 20px;
-    color: rgb(244, 244, 244);
+    flex-direction: row;
     margin: 10px;
-    content: center;
-    align-self: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
-    margin-top: 450px;
-    margin-bottom: 10px;
-    background-color: rgba(10,23,55,0.5);
+    align-items: center;
+    margin-left: 720px;
+    justify-content: center;
+    height: 70px;
+    width: 400px;
+    background-color: rgb(10, 23, 55);
     border-radius: 10px;
-    padding: 50px;
-    border-width: 10px;
-    border-top: 10px;
-
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    overflow: hidden;
 }
-#conteudo:hover{
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color:rgb(246, 246, 246);
+
+
+.conteudosobremim{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: rgba(10, 23, 55, 0.514);
+    border-radius: 50px;
+    width: 1860px;
+    color: white;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    
     
 }
+
+
 #sobremimid{
-    position: fixed;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    margin: 10px;
-    content: center;
-    align-self: center;
-    text-align: center;
-    margin:0%;
-    background-color: rgba(0, 53, 188, 0.952);
-    border-radius: 10px;
-    padding: 30px;
-    margin-block: -70px;
+        display: flex; 
+        flex-direction: row;
+        margin: 0px;
+        background-color: rgba(4, 24, 73, 0.89);
+        border-radius: 100px;
+        width: 180px;
+        color: white;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+  
 
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    overflow: hidden;
 }
 #sobremimid:hover{
     transform: matrix3d(1.1,0,0,0,0,1.1,0,0,0,0,1,0,0,0,0,1);
+    transition: all 0.5s ease;
+
 
 }     
 #conteudobox {
-    position: relative;
-    width: 350px;
-    height: 200px;
-    color: #000;
-    background-color: rgba(255, 255, 255, 0.918);
-    background-size: 400% 400%;
+    background-color: rgba(112, 117, 128, 0.959);
+    color: white;
+    width: 380px;
+    height: 190px;
     border-radius: 10px;
+    margin: 0px;
+    font-size: 18px;
     padding: 10px;
-    margin: 15px;
-    margin-top: 60px;
-    box-sizing: border-box;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    overflow: hidden;
-    display: flex;
-    float: left;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    margin-top: 300px;
+    position: relative;
+    transition: all 0.2s ease;
 }
 
 #botaohtmlcss{
-    display: flex;
+        display: flex;
+    margin-top: 140px;
     width: 390px;
     flex-direction:row ;
     justify-content: center;
     border-radius: 10px;
-    background: rgb(124,32,186);
-    background: linear-gradient(90deg, rgba(124,32,186,1) 10%, rgba(223,132,132,1) 50%, rgba(230,189,131,1) 81%);
-    background-size: 400% 400%;
+    background: rgb(124,32,186);  
     padding: 1px;
-    margin: -5px;
+    margin: 5px;
+    margin-top: 80px;
+    text-align: center;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     transition: all 0.5s ease;
-    
-    
+    background: linear-gradient(90deg, rgba(124,32,186,1) 10%, rgba(223,132,132,1) 50%, rgba(230,189,131,1) 81%);
+    background-size: 200% 200%;
 }
 #botaohtmlcss:hover {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -243,55 +203,44 @@ aside {
 
     }
 
-#imagemjs{
-    max-width:400px;
-    max-height:315px;
-    width: auto;
-    height: auto;
-}
 
 #botaojs{
     display: flex;
+    margin-top: 140px;
     width: 390px;
     flex-direction:row ;
     justify-content: center;
     border-radius: 10px;
-    background: rgb(124,32,186);
-    background: linear-gradient(90deg, rgba(124,32,186,1) 10%, rgba(223,132,132,1) 50%, rgba(230,189,131,1) 81%);
-    background-size: 400% 400%;
+    background: rgb(124,32,186);  
     padding: 1px;
-    margin: -5px;
+    margin: 5px;
+    margin-top: 80px;
+    text-align: center;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     transition: all 0.5s ease;
-    
+    background: linear-gradient(90deg, rgba(124,32,186,1) 10%, rgba(223,132,132,1) 50%, rgba(230,189,131,1) 81%);
+    background-size: 200% 200%;
 }
 #botaojs:hover {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         box-shadow: 0 5px 15px rgba(0,0,0,0.25);
         transition: all 0.5s ease;
+        transform: matrix3d(1.1,0,0,0,0,1.1,0,0,0,0,1,0,0,0,0,1);
     }
 
 #conteudojs{
-    position: relative;
-    width: 350px;
-    height: 200px;
-    color: #000;
-    background-color: rgba(255, 255, 255, 0.918);
-    background-size: 400% 400%;
+    background-color: rgba(112, 117, 128, 0.959);
+    color: white;
+    width: 380px;
+    height: 190px;
     border-radius: 10px;
+    margin: 0px;
+    font-size: 18px;
     padding: 10px;
-    margin: 15px;
-    margin-top: 60px;
-    box-sizing: border-box;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    overflow: hidden;
-    display: flex;
-    float: left;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    margin-top: 300px;
+    position: relative;
+    transition: all 0.2s ease;
 }
 
 #linkedinicon{
@@ -299,10 +248,94 @@ aside {
     max-height:100px;
     width: auto;
     height: auto;
-    position: fixed;
-    margin-left: 150px;
+    position: relative;
+   
 }
+#dia{
+    margin: 10px;
+    padding: 0px;
+    background-color: rgba(10, 23, 55, 0.514);
+    border-radius:94% 100% 100% 0% / 48% 0% 100% 7% ;
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 200px;
+    color: white;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: flex;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#dia:hover{
+    transform: matrix3d(1.1,0,0,0,0,1.1,0,0,0,0,1,0,0,0,0,1);
+    transition: all 0.5s ease;
+
+}
+
 #linkedinicon:hover{
     transform: matrix3d(1.1,0,0,0,0,1.1,0,0,0,0,1,0,0,0,0,1);
     transition: all 0.5s ease;
+}
+#githubicon{
+
+    background: linear-gradient(301deg, #ff0000, #cfe846, #468ae8, #f509b8, #f30000, #050101, #ffffff, #00ff15, #65b096, #3ad5d0);
+    background-size: 2000% 2000%;
+
+    -webkit-animation: AnimationName 2s ease infinite;
+    -moz-animation: AnimationName 2s ease infinite;
+    animation: AnimationName 2s ease infinite;
+
+    max-width:100px;
+    max-height:100px;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 110px;
+    margin-top: -105px;
+}
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
+
+
+
+#githubicon:hover{
+    transform: matrix3d(1.1,0,0,0,0,1.1,0,0,0,0,1,0,0,0,0,1);
+    transition: all 0.5s ease;
+}
+.containericons{
+    display:flex ;
+    flex-direction: row;
+}
+.imagens{
+    max-width:400px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10px;
+
 }
