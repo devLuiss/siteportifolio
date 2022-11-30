@@ -25,19 +25,19 @@ setInterval(function () {
       nomeDodia = "Domingo";
       break;
     case 1:
-      nomeDodia = "Segunda Feira";
+      nomeDodia = "Segunda ";
       break;
     case 2:
-      nomeDodia = "Terça Feira";
+      nomeDodia = "Terça ";
       break;
     case 3:
-      nomeDodia = "Quarta Feira";
+      nomeDodia = "Quarta ";
       break;
     case 4:
-      nomeDodia = "Quinta Feira";
+      nomeDodia = "Quinta ";
       break;
     case 5:
-      nomeDodia = "Sexta Feira";
+      nomeDodia = "Sexta ";
       break;
     case 6:
       nomeDodia = "Sábado ";
@@ -47,8 +47,23 @@ setInterval(function () {
   }
 
   document.getElementById("dia").innerHTML =
-    "Hoje é : " + nomeDodia + " " + hora + ":" + minutos + ":" + segundos;
+    "Hoje é : " +
+    nomeDodia +
+    " " +
+    hora +
+    ":" +
+    fixZero(minutos) +
+    ":" +
+    fixZero(segundos);
 }, 1000);
+
+function fixZero(time) {
+  if (time < 10) {
+    return "0" + time;
+  } else {
+    return time;
+  }
+}
 
 function showjs() {
   let htmlconteudo = document.getElementById("conteudojs");
